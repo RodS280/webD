@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laberinto de Amor - Diana</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <main class="container game-container">
+        <div class="glass-card">
+            <h1 class="game-title">Encuentra mi Corazón</h1>
+            <p class="game-instruction">Usa las flechas del teclado (o desliza en la pantalla) para llegar al corazón. ¡Pasa por los puntos dorados para descubrir mensajes!</p>
+            
+            <div class="canvas-wrapper">
+                <canvas id="gameCanvas" width="400" height="400"></canvas>
+                <div id="messagePopup" class="popup hidden">
+                    <p id="popupText"></p>
+                    <button class="btn small-btn" id="closePopupBtn">Continuar</button>
+                </div>
+            </div>
+
+            <div class="actions mt-2">
+                <a href="cupon.html" class="btn secondary-btn">Volver al Cupón</a>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
